@@ -9,10 +9,10 @@ const saltRounds = Number(process.env.SALT_ROUNDS) || 10;
 
 const router = Router();
 
-router.post('/register', async(req: Request, res: Response) => {
-    try{
+router.post('/register', async (req: Request, res: Response) => {
+    try {
         const validation = schemas.SignupSchema.safeParse(req.body);
-        if(!validation.success) {
+        if (!validation.success) {
             return res.status(400).json({
                 error: "InvalidInput"
             });
@@ -33,7 +33,7 @@ router.post('/register', async(req: Request, res: Response) => {
 
         return res.status(201).json({
             message: `User created Successfully with id ${user.id}`
-        })
+        });
     } catch (err) {
         return res.status(500).json({
             error: "InternalServerError"
@@ -41,10 +41,10 @@ router.post('/register', async(req: Request, res: Response) => {
     }
 });
 
-router.post('/login', async(req: Request, res: Response) => {
-        try{
+router.post('/login', async (req: Request, res: Response) => {
+    try {
         const validation = schemas.LoginSchema.safeParse(req.body);
-        if(!validation.success) {
+        if (!validation.success) {
             return res.status(400).json({
                 error: "InvalidInput"
             });
@@ -55,7 +55,7 @@ router.post('/login', async(req: Request, res: Response) => {
             where: { email }
         });
 
-        if(!user) {
+        if (!user) {
             return res.status(401).json({
                 success: false,
                 error: "InvalidCredentials"
@@ -64,7 +64,7 @@ router.post('/login', async(req: Request, res: Response) => {
 
         const validPassword = await bcrypt.compare(password, user.passwordHash);
 
-        if(!validPassword) {
+        if (!validPassword) {
             return res.status(401).json({
                 success: false,
                 error: "InvalidUser"
