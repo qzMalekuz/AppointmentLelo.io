@@ -38,7 +38,7 @@ const Register = () => {
                         <Calendar className="w-7 h-7 text-white" />
                     </div>
                     <h1 className="text-2xl font-semibold text-slate-900">Create Account</h1>
-                    <p className="text-slate-500 mt-2">Join BookIt to get started</p>
+                    <p className="text-slate-500 mt-2">Join AppointmentLelo.io to get started</p>
                 </div>
 
                 <Card>

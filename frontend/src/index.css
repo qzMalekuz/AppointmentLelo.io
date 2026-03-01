@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
 body {
-  @apply bg-gray-50 text-slate-800 font-sans antialiased;
+  @apply bg-gray-50 text-slate-800 font-sans antialiased transition-colors duration-0;
+}
+
+.dark body {
+  @apply bg-slate-900 text-slate-100;
+}
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 1;
+}
+
+::view-transition-new(root) {
+  z-index: 2;
+}
+
+.dark::view-transition-old(root) {
+  z-index: 2;
+}
+
+.dark::view-transition-new(root) {
+  z-index: 1;
 }

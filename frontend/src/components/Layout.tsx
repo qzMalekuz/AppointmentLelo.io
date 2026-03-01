@@ -1,10 +1,12 @@
 import { Outlet, Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { LogOut, Calendar } from 'lucide-react';
+import { Calendar, LogOut, User, Moon, Sun } from 'lucide-react';
+import { useTheme } from '../context/ThemeContext';
 import Button from './Button';
 
 const Layout = () => {
     const { logout, role } = useAuth();
+    const { theme, toggleTheme } = useTheme();
     const navigate = useNavigate();
 
     const handleLogout = () => {
@@ -32,7 +34,7 @@ const Layout = () => {
                         <div className="w-8 h-8 bg-slate-900 rounded-lg flex items-center justify-center">
                             <Calendar className="w-5 h-5 text-white" />
                         </div>
-                        BookIt
+                        AppointmentLelo.io
                     </Link>
 
                     <div className="flex items-center gap-6">
@@ -50,7 +52,14 @@ const Layout = () => {
 
                         <div className="w-px h-6 bg-gray-200"></div>
 
-                        <Button variant="secondary" onClick={handleLogout} className="!py-1.5 !px-3 text-sm">
+                        <button
+                            onClick={toggleTheme}
+                            className="p-2 text-slate-600 hover:bg-slate-100 dark:text-slate-300 dark:hover:bg-slate-800 rounded-full transition-colors"
+                        >
+                            {theme === 'dark' ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
+                        </button>
+
+                        <Button variant="danger" onClick={handleLogout} className="flex items-center gap-2 px-4 py-2 text-sm">
                             <LogOut className="w-4 h-4" />
                             Logout
                         </Button>
