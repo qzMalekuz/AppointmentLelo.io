@@ -1,0 +1,8 @@
+{
+    "name": "appointment-booking-system",
+    "private": true,
+    "workspaces": [
+        "frontend",
+        "backend"
+    ]
+}
