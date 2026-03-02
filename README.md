@@ -6,13 +6,13 @@
 
 ---
 
-## 🚀 Overview
+## Overview
 
 AppointmentLelo.io is a role-based appointment booking platform. **Service Providers** create services, define their weekly availability, and view their daily schedule. **Users** browse the service catalog, filter by category, pick a dynamically-generated time slot, and book appointments — all in real time.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 Monorepo with two independent packages:
 
@@ -24,7 +24,7 @@ Monorepo with two independent packages:
 
 ---
 
-## 💻 Frontend
+## Frontend
 
 ### Tech Stack
 
@@ -62,7 +62,7 @@ npm run dev
 
 ---
 
-## ⚙️ Backend
+## Backend
 
 ### Tech Stack
 
@@ -114,7 +114,7 @@ npm run dev
 
 ---
 
-## 🗺️ API Reference
+## API Reference
 
 ### Auth — `/auth`
 | Method | Path | Auth | Description |
