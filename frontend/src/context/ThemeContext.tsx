@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useEffect, useState, useRef } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 type Theme = 'light' | 'dark';
 
@@ -18,7 +19,6 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
 
     const [overlay, setOverlay] = useState<{ x: number; y: number; newTheme: Theme } | null>(null);
     const [animating, setAnimating] = useState(false);
-    const circleRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const root = window.document.documentElement;
@@ -32,35 +32,6 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         localStorage.setItem('theme', theme);
     }, [theme]);
 
-    useEffect(() => {
-        if (overlay && circleRef.current) {
-            // eslint-disable-next-line react-hooks/set-state-in-effect
-            setAnimating(true);
-
-            // Force reflow
-            void circleRef.current.offsetWidth;
-
-            // Start Expanding
-            requestAnimationFrame(() => {
-                if (circleRef.current) {
-                    circleRef.current.style.clipPath = `circle(150% at ${overlay.x}px ${overlay.y}px)`;
-                }
-            });
-
-            // Wait for transition to end before unmounting overlay
-            const timer = setTimeout(() => {
-                setTheme(overlay.newTheme);
-                // Slight delay to hide the circle gracefully
-                setTimeout(() => {
-                    setOverlay(null);
-                    setAnimating(false);
-                }, 50);
-            }, 500); // Matches the CSS duration
-
-            return () => clearTimeout(timer);
-        }
-    }, [overlay]);
-
     const toggleTheme = (e: React.MouseEvent) => {
         if (animating) return;
 
@@ -68,33 +39,39 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
         const y = e.clientY;
         const newTheme = theme === 'light' ? 'dark' : 'light';
 
+        setAnimating(true);
         setOverlay({ x, y, newTheme });
+    };
+
+    const handleAnimationComplete = () => {
+        if (overlay) {
+            setTheme(overlay.newTheme);
+            setOverlay(null);
+            setAnimating(false);
+        }
     };
 
     return (
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
             {children}
-            {overlay && (
-                <div
-                    style={{
-                        position: 'fixed',
-                        inset: 0,
-                        zIndex: 99999,
-                        pointerEvents: 'none',
-                    }}
-                >
-                    <div
-                        ref={circleRef}
+            <AnimatePresence>
+                {overlay && (
+                    <motion.div
+                        key="theme-overlay"
+                        initial={{ clipPath: `circle(0px at ${overlay.x}px ${overlay.y}px)` }}
+                        animate={{ clipPath: `circle(150% at ${overlay.x}px ${overlay.y}px)` }}
+                        transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
+                        onAnimationComplete={handleAnimationComplete}
                         style={{
-                            width: '100%',
-                            height: '100%',
+                            position: 'fixed',
+                            inset: 0,
+                            zIndex: 99999,
+                            pointerEvents: 'none',
                             backgroundColor: overlay.newTheme === 'dark' ? '#121212' : '#F5F5F5',
-                            clipPath: `circle(0px at ${overlay.x}px ${overlay.y}px)`,
-                            transition: 'clip-path 500ms ease-in-out',
                         }}
                     />
-                </div>
-            )}
+                )}
+            </AnimatePresence>
         </ThemeContext.Provider>
     );
 };
