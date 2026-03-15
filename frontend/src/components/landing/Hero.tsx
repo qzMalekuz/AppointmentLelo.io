@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { CalendarDays, CheckCircle2, Clock3 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const slots = ['10:00 AM', '11:30 AM', '1:00 PM', '2:30 PM', '4:00 PM'];
 
@@ -18,10 +19,7 @@ export default function Hero() {
           transition={{ duration: 0.55, ease: 'easeOut' }}
           className="max-w-xl"
         >
-          <span className="inline-flex items-center rounded-full border border-blue-200 bg-blue-50 px-3 py-1 text-xs font-semibold tracking-wide text-blue-700 dark:border-blue-500/30 dark:bg-blue-500/10 dark:text-blue-300">
-            AppointmentLelo.io
-          </span>
-          <h1 className="mt-5 text-4xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-white">
+          <h1 className="text-4xl font-semibold leading-tight tracking-tight text-slate-900 sm:text-5xl lg:text-6xl dark:text-white">
             Easy scheduling for modern businesses
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-slate-600 dark:text-slate-300">
@@ -30,12 +28,12 @@ export default function Hero() {
           <p className="mt-4 text-sm text-slate-500 dark:text-slate-400">Simple, fast, and reliable appointment booking.</p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <a
-              href="#"
+            <Link
+              to="/register"
               className="inline-flex items-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transition hover:from-blue-500 hover:to-indigo-500"
             >
               Get Started Free
-            </a>
+            </Link>
             <a
               href="#product"
               className="inline-flex items-center rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-400 hover:text-slate-900 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-200 dark:hover:border-slate-500"

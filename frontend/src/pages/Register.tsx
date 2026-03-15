@@ -4,7 +4,7 @@ import api from '../api/axios';
 import Button from '../components/Button';
 import Input from '../components/Input';
 import { Card, CardBody } from '../components/Card';
-import { Calendar } from 'lucide-react';
+import { BrandWordmark } from '../components/Brand';
 
 const Register = () => {
     const [name, setName] = useState('');
@@ -35,10 +35,8 @@ const Register = () => {
         <div className="min-h-screen flex items-center justify-center bg-background text-text-main transition-colors duration-0 p-4">
             <div className="w-full max-w-md">
                 <div className="flex flex-col items-center mb-8">
-                    <div className="w-12 h-12 bg-primary rounded-xl flex items-center justify-center mb-4">
-                        <Calendar className="w-7 h-7 text-button-text" />
-                    </div>
-                    <h1 className="text-2xl font-semibold text-text-main text-center">Welcome to AppointmentLelo.io</h1>
+                    <BrandWordmark textClassName="text-4xl sm:text-5xl" markClassName="h-12 w-12 sm:h-14 sm:w-14" />
+                    <h1 className="mt-4 text-2xl font-semibold text-text-main text-center">Create your account</h1>
                     <p className="text-text-muted mt-2 text-center text-sm max-w-sm">Your one stop to book and track all your appointments</p>
                 </div>
 

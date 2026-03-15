@@ -33,12 +33,23 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <Link to="/login" className="text-sm font-medium text-slate-700 transition hover:text-slate-950 dark:text-slate-300 dark:hover:text-white">
-            Login
-          </Link>
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
+          <Link
+            to="/login"
+            className="inline-flex items-center rounded-xl border border-blue-200 bg-blue-50 px-4 py-2.5 text-sm font-semibold text-blue-700 shadow-sm transition hover:bg-blue-100 dark:border-blue-500/35 dark:bg-blue-500/12 dark:text-blue-200 dark:hover:bg-blue-500/18"
+          >
+            Login
+          </Link>
+
+          <Link
+            to="/register"
+            className="inline-flex items-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transition hover:from-blue-500 hover:to-indigo-500"
+          >
+            Get Started
+          </Link>
+
           <motion.button
             type="button"
             onClick={toggleTheme}
@@ -46,7 +57,7 @@ export default function Navbar() {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
             aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-            className="relative inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-slate-200 bg-slate-100 text-slate-600 transition-colors duration-300 hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
+            className="relative ml-1 inline-flex h-10 w-10 items-center justify-center overflow-hidden rounded-full border border-slate-200 bg-slate-100 text-slate-600 transition-colors duration-300 hover:bg-slate-200 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700"
           >
             <AnimatePresence mode="wait" initial={false}>
               <motion.span
@@ -61,13 +72,6 @@ export default function Navbar() {
               </motion.span>
             </AnimatePresence>
           </motion.button>
-
-          <a
-            href="#"
-            className="inline-flex items-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-2.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transition hover:from-blue-500 hover:to-indigo-500"
-          >
-            Get Started
-          </a>
         </div>
 
         <button
@@ -95,10 +99,19 @@ export default function Navbar() {
                   {link.label}
                 </a>
               ))}
-              <Link to="/login" className="text-sm font-medium text-slate-700 dark:text-slate-300">
-                Login
-              </Link>
               <div className="flex items-center gap-3 pt-2">
+                <Link
+                  to="/login"
+                  className="inline-flex items-center rounded-xl border border-blue-200 bg-blue-50 px-4 py-2.5 text-sm font-semibold text-blue-700 dark:border-blue-500/35 dark:bg-blue-500/12 dark:text-blue-200"
+                >
+                  Login
+                </Link>
+                <Link
+                  to="/register"
+                  className="inline-flex items-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-2.5 text-sm font-semibold text-white"
+                >
+                  Get Started
+                </Link>
                 <motion.button
                   type="button"
                   onClick={toggleTheme}
@@ -109,12 +122,6 @@ export default function Navbar() {
                 >
                   {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
                 </motion.button>
-                <a
-                  href="#"
-                  className="inline-flex items-center rounded-xl bg-gradient-to-r from-blue-600 to-indigo-600 px-4 py-2.5 text-sm font-semibold text-white"
-                >
-                  Get Started
-                </a>
               </div>
             </div>
           </motion.div>

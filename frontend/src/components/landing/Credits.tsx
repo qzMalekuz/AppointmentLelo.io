@@ -81,7 +81,7 @@ export default function Credits() {
               href="https://zafarr.xyz"
               target="_blank"
               rel="noreferrer"
-              className="font-semibold text-slate-900 decoration-sky-400/40 underline-offset-4 transition hover:text-slate-700 hover:underline dark:text-white dark:decoration-cyan-300/35 dark:hover:text-slate-200"
+              className="font-semibold text-slate-900 underline decoration-sky-400/40 underline-offset-4 transition duration-200 hover:text-slate-700 hover:decoration-sky-400/65 dark:text-white dark:decoration-cyan-300/35 dark:hover:text-slate-200 dark:hover:decoration-cyan-300/60"
             >
               zafarr.
             </a>
