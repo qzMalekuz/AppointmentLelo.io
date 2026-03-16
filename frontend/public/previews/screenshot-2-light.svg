@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fbfcfd"/>
+      <stop offset="100%" stop-color="#f6f6f6"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#eceff3"/>
+      <stop offset="100%" stop-color="#f1f3f5"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="36" y="28" width="1128" height="644" rx="28" fill="#f4f6f8" stroke="#d8dee7"/>
+
+  <rect x="36" y="28" width="1128" height="58" rx="28" fill="#eceff3"/>
+  <circle cx="66" cy="57" r="6" fill="#abb6c8"/>
+  <circle cx="86" cy="57" r="6" fill="#abb6c8"/>
+  <circle cx="106" cy="57" r="6" fill="#abb6c8"/>
+  <rect x="132" y="48" width="286" height="18" rx="9" fill="#d8dee7"/>
+  <rect x="1018" y="46" width="110" height="22" rx="8" fill="#e2e6ed" stroke="#bec6d3"/>
+
+  <rect x="72" y="108" width="1056" height="520" rx="20" fill="url(#panel)" stroke="#c7cfdb"/>
+  <text x="98" y="156" fill="#111827" font-family="Inter,Arial,sans-serif" font-size="36" font-weight="700">Available Services</text>
+  <text x="98" y="184" fill="#6b7280" font-family="Inter,Arial,sans-serif" font-size="18">Book your next appointment</text>
+
+  <rect x="846" y="136" width="126" height="52" rx="13" fill="#e7eaf0" stroke="#aeb9c9"/>
+  <text x="892" y="169" fill="#374151" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">ALL</text>
+  <rect x="980" y="136" width="126" height="52" rx="13" fill="#e5e9ef" stroke="#b6c0ce"/>
+  <text x="1002" y="169" fill="#6b7280" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">POPULAR</text>
+
+  <g transform="translate(98,222)">
+    <rect width="310" height="166" rx="16" fill="#e5e9ef" stroke="#b6c0ce"/>
+    <rect x="18" y="14" width="92" height="24" rx="8" fill="#d2d9e3"/>
+    <text x="30" y="31" fill="#6b7280" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700">MEDICAL</text>
+    <text x="18" y="66" fill="#111827" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">General Checkup</text>
+    <rect x="18" y="79" width="136" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="96" width="170" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="116" width="150" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="130" width="274" height="24" rx="8" fill="#111827"/>
+  </g>
+
+  <g transform="translate(444,222)">
+    <rect width="310" height="166" rx="16" fill="#e5e9ef" stroke="#b6c0ce"/>
+    <rect x="18" y="14" width="92" height="24" rx="8" fill="#d2d9e3"/>
+    <text x="30" y="31" fill="#6b7280" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700">MENTAL</text>
+    <text x="18" y="66" fill="#111827" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">Therapy Session</text>
+    <rect x="18" y="79" width="136" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="96" width="170" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="116" width="150" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="130" width="274" height="24" rx="8" fill="#111827"/>
+  </g>
+
+  <g transform="translate(790,222)">
+    <rect width="310" height="166" rx="16" fill="#e5e9ef" stroke="#b6c0ce"/>
+    <rect x="18" y="14" width="120" height="24" rx="8" fill="#d2d9e3"/>
+    <text x="30" y="31" fill="#6b7280" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700">HOUSE_HELP</text>
+    <text x="18" y="66" fill="#111827" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">Deep Cleaning</text>
+    <rect x="18" y="79" width="136" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="96" width="170" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="116" width="150" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="130" width="274" height="24" rx="8" fill="#111827"/>
+  </g>
+
+  <g transform="translate(98,404)">
+    <rect width="310" height="166" rx="16" fill="#e5e9ef" stroke="#b6c0ce"/>
+    <rect x="18" y="14" width="76" height="24" rx="8" fill="#d2d9e3"/>
+    <text x="30" y="31" fill="#6b7280" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700">FITNESS</text>
+    <text x="18" y="66" fill="#111827" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">Personal Training</text>
+    <rect x="18" y="79" width="136" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="96" width="170" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="116" width="150" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="130" width="274" height="24" rx="8" fill="#111827"/>
+  </g>
+
+  <g transform="translate(444,404)">
+    <rect width="310" height="166" rx="16" fill="#e5e9ef" stroke="#b6c0ce"/>
+    <rect x="18" y="14" width="76" height="24" rx="8" fill="#d2d9e3"/>
+    <text x="30" y="31" fill="#6b7280" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700">BEAUTY</text>
+    <text x="18" y="66" fill="#111827" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">Haircut &amp; Styling</text>
+    <rect x="18" y="79" width="136" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="96" width="170" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="116" width="150" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="130" width="274" height="24" rx="8" fill="#111827"/>
+  </g>
+
+  <g transform="translate(790,404)">
+    <rect width="310" height="166" rx="16" fill="#e5e9ef" stroke="#b6c0ce"/>
+    <rect x="18" y="14" width="92" height="24" rx="8" fill="#d2d9e3"/>
+    <text x="30" y="31" fill="#6b7280" font-family="Inter,Arial,sans-serif" font-size="13" font-weight="700">EDUCATION</text>
+    <text x="18" y="66" fill="#111827" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="700">Math Tutoring</text>
+    <rect x="18" y="79" width="136" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="96" width="170" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="116" width="150" height="10" rx="5" fill="#c7cfdb"/>
+    <rect x="18" y="130" width="274" height="24" rx="8" fill="#111827"/>
+  </g>
+
+  <line x1="72" y1="392" x2="1128" y2="392" stroke="#b8c1cf"/>
+  <rect x="72" y="590" width="1056" height="1" fill="#b6c0ce" opacity=".6"/>
+</svg>

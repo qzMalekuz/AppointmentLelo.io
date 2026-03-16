@@ -42,6 +42,16 @@ router.post('/', authMiddleware, async (req: Request, res: Response) => {
             return res.status(400).json({ error: "Invalid date in slotId" });
         }
 
+        // Basic past booking prevention
+        const now = new Date();
+        const bookingDateTime = new Date(dateStr);
+        const [hours, minutes] = startTime.split(':').map(Number);
+        bookingDateTime.setHours(hours ?? 0, minutes ?? 0, 0, 0);
+
+        if (bookingDateTime < now) {
+            return res.status(400).json({ error: "Cannot book appointments in the past" });
+        }
+
         const service = await prisma.service.findUnique({
             where: { id: serviceId },
             include: { availability: true }

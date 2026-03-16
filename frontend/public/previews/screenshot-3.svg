@@ -1,59 +1,59 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#14171e"/>
-      <stop offset="100%" stop-color="#111319"/>
+      <stop offset="0%" stop-color="#1a1a1a"/>
+      <stop offset="100%" stop-color="#111111"/>
     </linearGradient>
     <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1b202a"/>
-      <stop offset="100%" stop-color="#171b23"/>
+      <stop offset="0%" stop-color="#1f1f1f"/>
+      <stop offset="100%" stop-color="#171717"/>
     </linearGradient>
   </defs>
 
   <rect width="1200" height="700" fill="url(#bg)"/>
-  <rect x="36" y="28" width="1128" height="644" rx="28" fill="#151922" stroke="#2a313d"/>
+  <rect x="36" y="28" width="1128" height="644" rx="28" fill="#1b1b1b" stroke="#303030"/>
 
-  <rect x="36" y="28" width="1128" height="58" rx="28" fill="#1b202a"/>
-  <circle cx="66" cy="57" r="6" fill="#3d4655"/>
-  <circle cx="86" cy="57" r="6" fill="#3d4655"/>
-  <circle cx="106" cy="57" r="6" fill="#3d4655"/>
-  <rect x="132" y="48" width="286" height="18" rx="9" fill="#2a313d"/>
-  <rect x="1018" y="46" width="110" height="22" rx="8" fill="#232a36" stroke="#3a4352"/>
+  <rect x="36" y="28" width="1128" height="58" rx="28" fill="#1f1f1f"/>
+  <circle cx="66" cy="57" r="6" fill="#5a5a5a"/>
+  <circle cx="86" cy="57" r="6" fill="#5a5a5a"/>
+  <circle cx="106" cy="57" r="6" fill="#5a5a5a"/>
+  <rect x="132" y="48" width="286" height="18" rx="9" fill="#303030"/>
+  <rect x="1018" y="46" width="110" height="22" rx="8" fill="#2b2b2b" stroke="#454545"/>
 
-  <rect x="72" y="108" width="1056" height="520" rx="20" fill="url(#panel)" stroke="#323948"/>
-  <text x="98" y="162" fill="#f3f4f6" font-family="Inter,Arial,sans-serif" font-size="45" font-weight="700">My Appointments</text>
-  <text x="98" y="196" fill="#a3adbc" font-family="Inter,Arial,sans-serif" font-size="23">Manage all your booked services</text>
+  <rect x="72" y="108" width="1056" height="520" rx="20" fill="url(#panel)" stroke="#3a3a3a"/>
+  <text x="98" y="156" fill="#f3f4f6" font-family="Inter,Arial,sans-serif" font-size="36" font-weight="700">My Appointments</text>
+  <text x="98" y="184" fill="#a3adbc" font-family="Inter,Arial,sans-serif" font-size="18">Manage all your booked services</text>
 
-  <rect x="98" y="228" width="1004" height="334" rx="16" fill="#1f2430" stroke="#3a4251"/>
-  <rect x="98" y="228" width="1004" height="58" rx="16" fill="#242b38"/>
+  <rect x="98" y="228" width="1004" height="334" rx="16" fill="#242424" stroke="#4b4b4b"/>
+  <rect x="98" y="228" width="1004" height="58" rx="16" fill="#2e2e2e"/>
 
-  <text x="130" y="265" fill="#a8b2c0" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700">SERVICE</text>
-  <text x="460" y="265" fill="#a8b2c0" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700">DATE</text>
-  <text x="650" y="265" fill="#a8b2c0" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700">TIME</text>
-  <text x="845" y="265" fill="#a8b2c0" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700">STATUS</text>
+  <text x="130" y="265" fill="#acacac" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">SERVICE</text>
+  <text x="500" y="265" fill="#acacac" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">DATE</text>
+  <text x="670" y="265" fill="#acacac" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">TIME</text>
+  <text x="865" y="265" fill="#acacac" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700">STATUS</text>
 
-  <g fill="#edf1f7" font-family="Inter,Arial,sans-serif" font-size="32" font-weight="700">
+  <g fill="#edf1f7" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="700">
     <text x="130" y="342">Haircut &amp; Styling</text>
-    <text x="130" y="422">Standard Cleaning (1 hr)</text>
+    <text x="130" y="422">Standard Cleaning</text>
     <text x="130" y="502">Manicure &amp; Pedicure</text>
   </g>
 
-  <g fill="#d0d8e3" font-family="Inter,Arial,sans-serif" font-size="25">
-    <text x="460" y="342">2026-03-18</text><text x="460" y="422">2026-03-18</text><text x="460" y="502">2026-03-17</text>
-    <text x="650" y="342">10:45 - 11:30</text><text x="650" y="422">15:00 - 16:00</text><text x="650" y="502">13:00 - 14:30</text>
+  <g fill="#c9c9c9" font-family="Inter,Arial,sans-serif" font-size="16">
+    <text x="500" y="342">2026-03-18</text><text x="500" y="422">2026-03-18</text><text x="500" y="502">2026-03-17</text>
+    <text x="670" y="342">10:45 - 11:30</text><text x="670" y="422">15:00 - 16:00</text><text x="670" y="502">13:00 - 14:30</text>
   </g>
 
   <g>
-    <rect x="845" y="312" width="220" height="46" rx="23" fill="#273041" stroke="#465066"/>
-    <rect x="845" y="392" width="220" height="46" rx="23" fill="#273041" stroke="#465066"/>
-    <rect x="845" y="472" width="220" height="46" rx="23" fill="#273041" stroke="#465066"/>
-    <text x="905" y="343" fill="#e7edf6" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700">CONFIRMED</text>
-    <text x="905" y="423" fill="#e7edf6" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700">CONFIRMED</text>
-    <text x="905" y="503" fill="#e7edf6" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="700">CONFIRMED</text>
+    <rect x="845" y="312" width="220" height="46" rx="23" fill="#383838" stroke="#5c5c5c"/>
+    <rect x="845" y="392" width="220" height="46" rx="23" fill="#383838" stroke="#5c5c5c"/>
+    <rect x="845" y="472" width="220" height="46" rx="23" fill="#383838" stroke="#5c5c5c"/>
+    <text x="918" y="341" fill="#e7edf6" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700">CONFIRMED</text>
+    <text x="918" y="421" fill="#e7edf6" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700">CONFIRMED</text>
+    <text x="918" y="501" fill="#e7edf6" font-family="Inter,Arial,sans-serif" font-size="14" font-weight="700">CONFIRMED</text>
   </g>
 
-  <line x1="98" y1="318" x2="1102" y2="318" stroke="#394253"/>
-  <line x1="98" y1="398" x2="1102" y2="398" stroke="#394253"/>
-  <line x1="98" y1="478" x2="1102" y2="478" stroke="#394253"/>
-  <rect x="72" y="590" width="1056" height="1" fill="#3a4251" opacity=".6"/>
+  <line x1="98" y1="318" x2="1102" y2="318" stroke="#4a4a4a"/>
+  <line x1="98" y1="398" x2="1102" y2="398" stroke="#4a4a4a"/>
+  <line x1="98" y1="478" x2="1102" y2="478" stroke="#4a4a4a"/>
+  <rect x="72" y="590" width="1056" height="1" fill="#4b4b4b" opacity=".6"/>
 </svg>

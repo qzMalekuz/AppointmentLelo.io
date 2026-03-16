@@ -1,9 +1,10 @@
 import { type Request, type Response, type NextFunction } from "express";
 import jwt, { type JwtPayload } from "jsonwebtoken";
+import { prisma } from "../lib/prisma";
 
 const jwtSecret = process.env.JWT_SECRET;
 
-export function authMiddleware(req: Request, res: Response, next: NextFunction) {
+export async function authMiddleware(req: Request, res: Response, next: NextFunction) {
 
     try {
         const header = req.headers.authorization;
@@ -25,6 +26,14 @@ export function authMiddleware(req: Request, res: Response, next: NextFunction) 
 
         const token = parts[1];
         const decoded = jwt.verify(token, jwtSecret as string) as JwtPayload;
+
+        const user = await prisma.user.findUnique({ where: { id: decoded.userId } });
+        if (!user) {
+            return res.status(401).json({
+                success: false,
+                error: "User not found"
+            });
+        }
 
         req.user = {
             userId: decoded.userId,
