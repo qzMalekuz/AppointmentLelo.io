@@ -20,7 +20,7 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/90 backdrop-blur-xl dark:border-neutral-800 dark:bg-neutral-900/90 transition-colors duration-300">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-6 lg:px-8">
         <Link to="/" className="hover:opacity-90 transition-opacity">
-          <BrandWordmark textClassName="text-[2rem] sm:text-[2.05rem]" markClassName="h-10 w-10 sm:h-11 sm:w-11" />
+          <BrandWordmark textClassName="text-xl sm:text-2xl" markClassName="h-9 w-9 sm:h-10 sm:w-10" />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

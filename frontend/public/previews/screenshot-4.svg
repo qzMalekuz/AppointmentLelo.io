@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14171e"/>
+      <stop offset="100%" stop-color="#111319"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b202a"/>
+      <stop offset="100%" stop-color="#171b23"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="36" y="28" width="1128" height="644" rx="28" fill="#151922" stroke="#2a313d"/>
+
+  <rect x="36" y="28" width="1128" height="58" rx="28" fill="#1b202a"/>
+  <circle cx="66" cy="57" r="6" fill="#3d4655"/>
+  <circle cx="86" cy="57" r="6" fill="#3d4655"/>
+  <circle cx="106" cy="57" r="6" fill="#3d4655"/>
+  <rect x="132" y="48" width="286" height="18" rx="9" fill="#2a313d"/>
+  <rect x="1018" y="46" width="110" height="22" rx="8" fill="#232a36" stroke="#3a4352"/>
+
+  <rect x="72" y="108" width="1056" height="520" rx="20" fill="url(#panel)" stroke="#323948"/>
+  <text x="98" y="162" fill="#f3f4f6" font-family="Inter,Arial,sans-serif" font-size="45" font-weight="700">Book Appointment</text>
+  <text x="98" y="196" fill="#a3adbc" font-family="Inter,Arial,sans-serif" font-size="23">Select a date and time slot</text>
+
+  <rect x="98" y="228" width="1004" height="334" rx="16" fill="#1f2430" stroke="#3a4251"/>
+  <rect x="98" y="228" width="1004" height="74" rx="16" fill="#242b38"/>
+  <text x="130" y="275" fill="#f0f4fb" font-family="Inter,Arial,sans-serif" font-size="44" font-weight="700">Select Date</text>
+
+  <rect x="880" y="243" width="190" height="44" rx="13" fill="#273041" stroke="#465066"/>
+
+  <g>
+    <rect x="130" y="328" width="286" height="84" rx="14" fill="#272e3c" stroke="#444e62"/>
+    <rect x="456" y="328" width="286" height="84" rx="14" fill="#272e3c" stroke="#444e62"/>
+    <rect x="782" y="328" width="286" height="84" rx="14" fill="#2f4264" stroke="#6e96c9"/>
+
+    <rect x="130" y="434" width="286" height="84" rx="14" fill="#272e3c" stroke="#444e62"/>
+    <rect x="456" y="434" width="286" height="84" rx="14" fill="#272e3c" stroke="#444e62"/>
+    <rect x="782" y="434" width="286" height="84" rx="14" fill="#272e3c" stroke="#444e62"/>
+  </g>
+
+  <g fill="#eef3fb" font-family="Inter,Arial,sans-serif" font-size="41" font-weight="700">
+    <text x="160" y="383">10:00</text>
+    <text x="486" y="383">10:45</text>
+    <text x="812" y="383">11:30</text>
+    <text x="160" y="489">12:15</text>
+    <text x="486" y="489">13:00</text>
+    <text x="812" y="489">13:45</text>
+  </g>
+
+  <rect x="72" y="590" width="1056" height="1" fill="#3a4251" opacity=".6"/>
+</svg>

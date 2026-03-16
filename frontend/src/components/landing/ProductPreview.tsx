@@ -1,72 +1,54 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 
 const cards = [
   {
     title: 'User Booking Page',
     description: 'Fast, guided booking experience with service and slot selection.',
-    accent: 'from-neutral-200/80 to-neutral-100/80 dark:from-neutral-800 dark:to-neutral-700',
-    image: '/previews/screenshot-2.png',
+    image: '/previews/screenshot-2.svg',
   },
   {
     title: 'Provider Dashboard',
     description: 'See upcoming appointments and key booking metrics at a glance.',
-    accent: 'from-neutral-200/80 to-neutral-100/80 dark:from-neutral-800 dark:to-neutral-700',
-    image: '/previews/screenshot-3.png',
+    image: '/previews/screenshot-3.svg',
   },
   {
     title: 'Slot Selection UI',
     description: 'Smart slot rendering with available windows and instant confirmations.',
-    accent: 'from-neutral-200/80 to-neutral-100/80 dark:from-neutral-800 dark:to-neutral-700',
-    image: '/previews/screenshot-4.png',
+    image: '/previews/screenshot-4.svg',
   },
 ];
 
 export default function ProductPreview() {
-  const [failedImages, setFailedImages] = useState<Record<string, boolean>>({});
-
   return (
     <section id="product" className="px-5 py-18 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-2xl">
-          <h2 className="text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl dark:text-white">Product preview</h2>
-          <p className="mt-4 text-base text-neutral-600 dark:text-neutral-300">Explore key interfaces that power seamless appointment booking and management.</p>
+          <h2 className="text-3xl font-semibold tracking-tight text-neutral-100 sm:text-4xl">Product preview</h2>
+          <p className="mt-4 text-base text-neutral-400">Explore key interfaces that power seamless appointment booking and management.</p>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {cards.map((card, index) => (
             <motion.article
               key={card.title}
-              initial={{ opacity: 0, y: 16 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-100px" }}
+              viewport={{ once: true, margin: '-100px' }}
               transition={{ duration: 0.35, delay: index * 0.08 }}
-              className="overflow-hidden rounded-2xl border border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900"
+              className="overflow-hidden rounded-2xl border border-neutral-700 bg-neutral-900"
             >
-              <div className={`relative h-48 bg-gradient-to-br ${card.accent} p-2`}>
-                <div className="absolute inset-2 rounded-xl border border-white/35 bg-white/40 backdrop-blur-sm dark:border-neutral-700/70 dark:bg-neutral-900/35" />
-                <div className="relative h-full overflow-hidden rounded-xl border border-neutral-200/80 bg-neutral-100/80 dark:border-neutral-700/80 dark:bg-neutral-900/70">
-                  {failedImages[card.image] ? (
-                    <div className="flex h-full w-full items-center justify-center bg-neutral-100 text-center dark:bg-neutral-800">
-                      <div>
-                        <p className="text-sm font-medium text-neutral-700 dark:text-neutral-300">{card.title}</p>
-                        <p className="mt-1 text-xs text-neutral-500 dark:text-neutral-400">Add {card.image.replace('/previews/', '')} in `frontend/public/previews`</p>
-                      </div>
-                    </div>
-                  ) : (
-                    <img
-                      src={card.image}
-                      alt={card.title}
-                      loading="lazy"
-                      className="h-full w-full object-cover"
-                      onError={() => setFailedImages((prev) => ({ ...prev, [card.image]: true }))}
-                    />
-                  )}
-                </div>
+              <div className="aspect-[16/10] overflow-hidden border-b border-neutral-700 bg-neutral-950">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  loading="lazy"
+                  className="h-full w-full object-cover object-top"
+                />
               </div>
-              <div className="p-5">
-                <h3 className="text-lg font-semibold text-neutral-900 dark:text-white">{card.title}</h3>
-                <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">{card.description}</p>
+
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-neutral-100">{card.title}</h3>
+                <p className="mt-2 text-base text-neutral-400">{card.description}</p>
               </div>
             </motion.article>
           ))}

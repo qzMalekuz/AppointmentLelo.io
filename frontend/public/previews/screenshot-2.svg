@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#14171e"/>
+      <stop offset="100%" stop-color="#111319"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b202a"/>
+      <stop offset="100%" stop-color="#171b23"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bg)"/>
+  <rect x="36" y="28" width="1128" height="644" rx="28" fill="#151922" stroke="#2a313d"/>
+
+  <rect x="36" y="28" width="1128" height="58" rx="28" fill="#1b202a"/>
+  <circle cx="66" cy="57" r="6" fill="#3d4655"/>
+  <circle cx="86" cy="57" r="6" fill="#3d4655"/>
+  <circle cx="106" cy="57" r="6" fill="#3d4655"/>
+  <rect x="132" y="48" width="286" height="18" rx="9" fill="#2a313d"/>
+  <rect x="1018" y="46" width="110" height="22" rx="8" fill="#232a36" stroke="#3a4352"/>
+
+  <rect x="72" y="108" width="1056" height="520" rx="20" fill="url(#panel)" stroke="#323948"/>
+  <text x="98" y="162" fill="#f3f4f6" font-family="Inter,Arial,sans-serif" font-size="45" font-weight="700">Available Services</text>
+  <text x="98" y="196" fill="#a3adbc" font-family="Inter,Arial,sans-serif" font-size="23">Book your next appointment</text>
+
+  <rect x="925" y="136" width="182" height="52" rx="13" fill="#222835" stroke="#404b5f"/>
+  <text x="1000" y="170" fill="#e6eaf0" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700">ALL</text>
+
+  <g transform="translate(98,228)">
+    <rect width="310" height="186" rx="16" fill="#1f2430" stroke="#3a4251"/>
+    <rect x="18" y="16" width="92" height="26" rx="8" fill="#2d3543"/>
+    <rect x="18" y="56" width="206" height="20" rx="6" fill="#2b3341"/>
+    <rect x="18" y="84" width="170" height="16" rx="6" fill="#2b3341"/>
+    <rect x="18" y="130" width="274" height="34" rx="10" fill="#e7ecf3"/>
+  </g>
+
+  <g transform="translate(444,228)">
+    <rect width="310" height="186" rx="16" fill="#1f2430" stroke="#3a4251"/>
+    <rect x="18" y="16" width="92" height="26" rx="8" fill="#2d3543"/>
+    <rect x="18" y="56" width="206" height="20" rx="6" fill="#2b3341"/>
+    <rect x="18" y="84" width="170" height="16" rx="6" fill="#2b3341"/>
+    <rect x="18" y="130" width="274" height="34" rx="10" fill="#e7ecf3"/>
+  </g>
+
+  <g transform="translate(790,228)">
+    <rect width="310" height="186" rx="16" fill="#1f2430" stroke="#3a4251"/>
+    <rect x="18" y="16" width="92" height="26" rx="8" fill="#2d3543"/>
+    <rect x="18" y="56" width="206" height="20" rx="6" fill="#2b3341"/>
+    <rect x="18" y="84" width="170" height="16" rx="6" fill="#2b3341"/>
+    <rect x="18" y="130" width="274" height="34" rx="10" fill="#e7ecf3"/>
+  </g>
+
+  <rect x="72" y="590" width="1056" height="1" fill="#3a4251" opacity=".6"/>
+</svg>
