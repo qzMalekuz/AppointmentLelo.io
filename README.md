@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./frontend/public/previews/screenshot-2.svg" alt="AppointmentLelo.io Banner" width="100%" />
+  <img src="./docs/appointment.png" alt="AppointmentLelo.io Banner" width="100%" />
 </p>
 
 <h1 align="center">AppointmentLelo.io</h1>
