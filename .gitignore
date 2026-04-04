@@ -1,36 +1,52 @@
-# dependencies (bun install)
+# dependencies
 node_modules
+.pnp
+.pnp.js
 
-# output
-out
-dist
-*.tgz
-
-# code coverage
+# testing
 coverage
-*.lcov
 
-# logs
-logs
-_.log
-report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
+# production
+backend/dist
+frontend/dist
+build
 
-# dotenv environment variable files
+# misc
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+*.pem
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+bun-error.log*
+
+# local env files
 .env
+.env.test
+.env.production
+.env.local
 .env.development.local
 .env.test.local
 .env.production.local
-.env.local
 
-# caches
-.eslintcache
-.cache
+# vercel
+.vercel
+
+# typescript
 *.tsbuildinfo
+next-env.d.ts
 
-# IntelliJ based IDEs
-.idea
-
-# Finder (MacOS) folder config
-.DS_Store
-
-/src/generated/prisma
+# ide / editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
