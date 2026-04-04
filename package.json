@@ -10,5 +10,8 @@
     },
     "scripts": {
         "postinstall": "npm rebuild lightningcss"
+    },
+    "optionalDependencies": {
+        "lightningcss": "^1.25.0"
     }
 }
