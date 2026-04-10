@@ -23,7 +23,7 @@ It includes a modern SaaS landing page, dark/light theme support, responsive lay
 
 ## Preview/Demo
 
-<video src="docs/appointment-screen-recording.mp4" width="100%" controls></video>
+![Video Demo](docs/appointment-screen-recording.mp4)
 
 ---
 
